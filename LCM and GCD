@@ -1,0 +1,12 @@
+n1=int(input("enter first number:"))
+n2=int(input("enter second number:"))
+X=n1
+Y=n2
+while(n2!=0):
+    t=n2
+    n2=n1%n2
+    n1=t
+gcd=n1
+print("gcd of{0} and {1}={2}".format(X,Y,gcd))
+lcm=(X*Y)/gcd
+print("lcm of{0} and {1}={2}".format(X,Y,lcm))
